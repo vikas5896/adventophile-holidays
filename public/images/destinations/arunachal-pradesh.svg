@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="gwg2aw5" x1="0%" y1="0%" x2="100% 100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#gwg2aw5)"/>
+  <g>
+      <path d="M360 800 L360 480 L840 480 L840 800 Z" fill="rgba(255,255,255,0.16)"/>
+      <path d="M312 480 L600 336 L888 480 Z" fill="rgba(255,255,255,0.24)"/>
+      <path d="M432 336 L600 240 L768 336 Z" fill="rgba(255,255,255,0.24)"/>
+      <path d="M600 240 L600 144" stroke="rgba(255,255,255,0.3)" stroke-width="4"/>
+      <path d="M600 160 Q 744 128 888 176" stroke="rgba(234,179,8,0.5)" stroke-width="3" fill="none" stroke-dasharray="2 10" stroke-linecap="round"/>
+    </g>
+  <text x="24" y="756" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="rgba(255,255,255,0.95)">Arunachal Pradesh</text>
+  
+  <text x="1186" y="786" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="21" letter-spacing="1" fill="rgba(255,255,255,0.55)">PLACEHOLDER IMAGE</text>
+</svg>

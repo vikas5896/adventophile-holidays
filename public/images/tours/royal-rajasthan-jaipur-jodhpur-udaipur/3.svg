@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="gr6ktoe" x1="0%" y1="0%" x2="100% 0%">
+      <stop offset="0%" stop-color="#be185d"/>
+      <stop offset="100%" stop-color="#831843"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#gr6ktoe)"/>
+  <g fill="rgba(255,255,255,0.22)">
+      <rect x="264" y="112.00000000000001" width="672.0000000000001" height="624" fill="rgba(255,255,255,0.08)"/>
+      <circle cx="336.00000000000006" cy="192" r="26.4"/><circle cx="439.2" cy="192" r="26.4"/><circle cx="542.4" cy="192" r="26.4"/><circle cx="645.6" cy="192" r="26.4"/><circle cx="748.8" cy="192" r="26.4"/><circle cx="852" cy="192" r="26.4"/><circle cx="336.00000000000006" cy="336" r="26.4"/><circle cx="439.2" cy="336" r="26.4"/><circle cx="542.4" cy="336" r="26.4"/><circle cx="645.6" cy="336" r="26.4"/><circle cx="748.8" cy="336" r="26.4"/><circle cx="852" cy="336" r="26.4"/><circle cx="336.00000000000006" cy="480" r="26.4"/><circle cx="439.2" cy="480" r="26.4"/><circle cx="542.4" cy="480" r="26.4"/><circle cx="645.6" cy="480" r="26.4"/><circle cx="748.8" cy="480" r="26.4"/><circle cx="852" cy="480" r="26.4"/><circle cx="336.00000000000006" cy="624" r="26.4"/><circle cx="439.2" cy="624" r="26.4"/><circle cx="542.4" cy="624" r="26.4"/><circle cx="645.6" cy="624" r="26.4"/><circle cx="748.8" cy="624" r="26.4"/><circle cx="852" cy="624" r="26.4"/>
+    </g>
+  <text x="24" y="756" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="rgba(255,255,255,0.95)">Royal Rajasthan</text>
+  <text x="24" y="782" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="rgba(255,255,255,0.75)">View 3</text>
+  <text x="1186" y="786" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="21" letter-spacing="1" fill="rgba(255,255,255,0.55)">PLACEHOLDER IMAGE</text>
+</svg>

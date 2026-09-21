@@ -2,25 +2,111 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #475569;
+  --border: #e2e8f0;
+
+  --brand-50: #ecfeff;
+  --brand-100: #cffafe;
+  --brand-400: #22d3ee;
+  --brand-500: #0891b2;
+  --brand-600: #0e7490;
+  --brand-700: #155e75;
+  --brand-900: #164e63;
+
+  --accent-500: #ea580c;
+  --accent-600: #c2410c;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+
+  --color-brand-50: var(--brand-50);
+  --color-brand-100: var(--brand-100);
+  --color-brand-400: var(--brand-400);
+  --color-brand-500: var(--brand-500);
+  --color-brand-600: var(--brand-600);
+  --color-brand-700: var(--brand-700);
+  --color-brand-900: var(--brand-900);
+
+  --color-accent-500: var(--accent-500);
+  --color-accent-600: var(--accent-600);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-14 sm:py-20;
+  }
+
+  .section-eyebrow {
+    @apply text-sm font-semibold uppercase tracking-wide text-brand-600;
+  }
+
+  .section-title {
+    @apply mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl;
+  }
+
+  .section-lede {
+    @apply mt-4 max-w-2xl text-base text-muted-foreground sm:text-lg;
+  }
+
+  .btn-primary,
+  .btn-accent,
+  .btn-outline,
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-primary {
+    @apply bg-brand-600 text-white hover:bg-brand-700;
+  }
+
+  .btn-accent {
+    @apply bg-accent-500 text-white hover:bg-accent-600;
+  }
+
+  .btn-outline {
+    @apply border border-border bg-white text-foreground hover:bg-muted;
+  }
+
+  .btn-ghost {
+    @apply text-foreground hover:bg-muted;
+  }
+
+  .card {
+    @apply rounded-2xl border border-border bg-white shadow-sm;
+  }
+
+  .field-label {
+    @apply mb-1.5 block text-sm font-medium text-foreground;
+  }
+
+  .field-input {
+    @apply block w-full rounded-lg border border-border bg-white px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/30;
+  }
+
+  .field-error {
+    @apply mt-1.5 text-sm text-red-600;
+  }
+
+  .badge {
+    @apply inline-flex items-center rounded-full bg-brand-50 px-2.5 py-1 text-xs font-medium text-brand-700;
+  }
 }

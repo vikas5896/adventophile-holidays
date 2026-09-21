@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g26arrd" x1="0%" y1="0%" x2="100% 100%">
+      <stop offset="0%" stop-color="#0c4a6e"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g26arrd)"/>
+  <path d="M0 630 L264 283.5 L432 409.5 L660 189 L864 378 L1020 264.59999999999997 L1200 630 Z" fill="rgba(255,255,255,0.16)"/>
+  <text x="24" y="586" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="700" fill="rgba(255,255,255,0.95)">Adventophile Holidays</text>
+  <text x="24" y="612" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="rgba(255,255,255,0.75)">Travel &amp; Holiday Management Company</text>
+  <text x="1186" y="616" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="1" fill="rgba(255,255,255,0.55)">PLACEHOLDER IMAGE</text>
+</svg>

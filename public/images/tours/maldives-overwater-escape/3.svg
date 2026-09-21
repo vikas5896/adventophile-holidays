@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g8skn8e" x1="0%" y1="0%" x2="100% 0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g8skn8e)"/>
+  <g>
+      <path d="M0 576 H1200" stroke="rgba(255,255,255,0.2)" stroke-width="3"/>
+      <path d="M240 576 V760 M552 576 V760 M864 576 V760" stroke="rgba(255,255,255,0.22)" stroke-width="5"/>
+      <path d="M144 576 H360 L312 463.99999999999994 L192 463.99999999999994 Z" fill="rgba(255,255,255,0.24)"/>
+      <path d="M456 576 H672.0000000000001 L624 440.00000000000006 L504 440.00000000000006 Z" fill="rgba(255,255,255,0.26)"/>
+      <path d="M768 576 H983.9999999999999 L936 463.99999999999994 L816.0000000000001 463.99999999999994 Z" fill="rgba(255,255,255,0.24)"/>
+      <path d="M0 624 Q600 592 1200 624" stroke="rgba(255,255,255,0.14)" stroke-width="3" fill="none"/>
+    </g>
+  <text x="24" y="756" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="rgba(255,255,255,0.95)">Maldives</text>
+  <text x="24" y="782" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="rgba(255,255,255,0.75)">View 3</text>
+  <text x="1186" y="786" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="21" letter-spacing="1" fill="rgba(255,255,255,0.55)">PLACEHOLDER IMAGE</text>
+</svg>

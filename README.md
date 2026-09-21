@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Adventophile Holidays
 
-## Getting Started
+Site for Adventophile Holidays, a travel & holiday management company based in Jodhpur, Rajasthan —
+customized domestic (India) and international holiday packages. Built with the Next.js App Router,
+TypeScript and Tailwind CSS to replace a legacy WordPress site whose audit is preserved in
+`Executive Summary.pdf` — the rebuild fixes everything that audit flagged: no dead nav links,
+no Lorem Ipsum content, unique SEO metadata per page, JSON-LD structured data, accessible forms
+(unique field IDs/labels), and descriptive image alt text throughout.
 
-First, run the development server:
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Content model
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Destinations** — typed data in `lib/data/destinations.ts`: 17 entries, each with a
+  `scope` of `"domestic"` (11 Indian destinations) or `"international"` (6). This split drives
+  the two sections on `/destinations`, the `/destinations/[slug]` pages, the homepage
+  destinations block, and the `?scope=` / `?destination=` filters on `/tours`.
+- **Tours (packages)** — typed data in `lib/data/tours.ts` (19 itineraries, priced in INR). Each
+  tour references a destination by slug via `location.destination`; a tour's domestic/international
+  scope is *derived* from that destination rather than stored twice (`getTourScope`).
+- **Services** — `lib/data/services.ts`, rendered on `/services`, the homepage and `/contact`.
+- **Company details** — `lib/site.ts` is the single source of truth for name, phone, email and
+  address; Header, Footer, `/contact`, `/about` and the JSON-LD `TravelAgency` schema all read
+  from it.
+- **Blog posts** — MDX files in `content/blog/*.mdx`, loaded via `lib/blog.ts`.
+- **Images** — `public/images/**` are locally generated placeholder SVGs (see
+  `scripts/generate-placeholders.mjs`, which must be edited in lockstep with the tour and
+  destination slugs). Every reference is marked as a placeholder; swap in licensed photography
+  before a real launch — `next.config.ts`'s `dangerouslyAllowSVG` exists only to serve these
+  placeholders and should be reconsidered once they're replaced.
+- **Still placeholder content** — the two team members in `app/about/page.tsx` and the four
+  reviews in `lib/data/testimonials.ts` are illustrative, not real people or real feedback. Both
+  files are marked `PLACEHOLDER`; replace them before launch.
 
-## Learn More
+## Contact / booking forms
 
-To learn more about Next.js, take a look at the following resources:
+`/contact` and each tour's "Book This Tour" form POST to `/api/contact` and `/api/book`, which
+send lead emails via [Resend](https://resend.com). Copy `.env.local.example` to `.env.local` and
+fill in:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `RESEND_API_KEY` — without this set, forms still work end-to-end; emails are logged to the
+  server console instead of sent, so you can test the full flow before creating a Resend account.
+- `CONTACT_TO_EMAIL` — inbox that receives leads.
+- `CONTACT_FROM_EMAIL` — verified sender once you have a Resend domain; defaults to Resend's
+  shared testing sender otherwise.
+- `NEXT_PUBLIC_SITE_URL` — used for canonical URLs, sitemap.xml, robots.txt, and OG images.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Both forms include a hidden honeypot field (`company`) — a filled-in value is silently accepted
+(`{ ok: true }`, no email sent) rather than rejected, so bots can't distinguish it from a real
+submission.
 
-## Deploy on Vercel
+## Verification
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run lint
+npm run build   # also runs the TypeScript check and prerenders all tour/post pages
+npm run start   # serve the production build locally
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For a full pre-launch check: run Lighthouse against `/`, a tour page, and a blog post; validate
+JSON-LD on a tour/post page with Google's Rich Results Test; and do a keyboard-only pass through
+the Contact and Booking forms.
+
+## Deploying
+
+Push to a Git remote and import the repo in Vercel, or run `vercel` from this directory. Set the
+environment variables above in the Vercel project settings before going live.

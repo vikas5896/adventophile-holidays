@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="gb5armn" x1="0%" y1="0%" x2="100% 100%">
+      <stop offset="0%" stop-color="#c2410c"/>
+      <stop offset="100%" stop-color="#7c2d12"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#gb5armn)"/>
+  <g fill="rgba(255,255,255,0.18)">
+      <path d="M96 800 L96 440.00000000000006 L192 440.00000000000006 L192 400 L240 400 L240 440.00000000000006 L336.00000000000006 440.00000000000006 L336.00000000000006 336 L408.00000000000006 336 L408.00000000000006 440.00000000000006 L504 440.00000000000006 L504 400 L552 400 L552 440.00000000000006 L660 440.00000000000006 L660 800 Z"/>
+      <rect x="132" y="496" width="60" height="112.00000000000001" rx="2" fill="rgba(12,20,20,0.25)"/>
+      <path d="M408.00000000000006 336 L408.00000000000006 240" stroke="rgba(255,255,255,0.3)" stroke-width="4"/>
+      <path d="M408.00000000000006 240 L480 264 L408.00000000000006 288 Z" fill="rgba(234,179,8,0.55)"/>
+    </g>
+  <text x="24" y="756" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="rgba(255,255,255,0.95)">Rajasthan</text>
+  
+  <text x="1186" y="786" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="21" letter-spacing="1" fill="rgba(255,255,255,0.55)">PLACEHOLDER IMAGE</text>
+</svg>

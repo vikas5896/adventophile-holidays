@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="gzl9bqr" x1="0%" y1="0%" x2="100% 100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#gzl9bqr)"/>
+  <g fill="rgba(255,255,255,0.16)">
+      <path d="M0 800 V656 L1200 560 V800 Z"/>
+      <path d="M0 656 V528 L1200 416 V560 Z" fill-opacity="0.8"/>
+      <path d="M0 528 V400 L1200 272 V416 Z" fill-opacity="0.6"/>
+      <path d="M720 272 L864 112.00000000000001 L1032 272 Z" fill-opacity="0.7"/>
+    </g>
+  <text x="24" y="756" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="rgba(255,255,255,0.95)">Himachal Pradesh</text>
+  
+  <text x="1186" y="786" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="21" letter-spacing="1" fill="rgba(255,255,255,0.55)">PLACEHOLDER IMAGE</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="gnyfows" x1="0%" y1="0%" x2="100% 0%">
+      <stop offset="0%" stop-color="#a16207"/>
+      <stop offset="100%" stop-color="#713f12"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#gnyfows)"/>
+  <g stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none">
+      <path d="M0 560 H1200"/>
+      <path d="M120 576 L264 680 L432 592 L600 720 L768 608 L936 736 L1080 600"/>
+      <path d="M24 656 L168.00000000000003 760 M360 624 L504 784 M696 656 L840 792"/>
+      <circle cx="936" cy="200" r="80" fill="rgba(255,255,255,0.2)" stroke="none"/>
+    </g>
+  <text x="24" y="756" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="rgba(255,255,255,0.95)">Gujarat</text>
+  <text x="24" y="782" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="rgba(255,255,255,0.75)">View 3</text>
+  <text x="1186" y="786" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="21" letter-spacing="1" fill="rgba(255,255,255,0.55)">PLACEHOLDER IMAGE</text>
+</svg>

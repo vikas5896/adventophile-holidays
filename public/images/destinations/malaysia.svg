@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="grfhnkr" x1="0%" y1="0%" x2="100% 100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#grfhnkr)"/>
+  <g fill="rgba(255,255,255,0.18)">
+      <path d="M384 800 V256 L432 160 L480 256 V800 Z"/>
+      <path d="M672.0000000000001 800 V256 L720 160 L768 256 V800 Z"/>
+      <rect x="480" y="384" width="192" height="40" fill-opacity="0.6"/>
+    </g>
+  <text x="24" y="756" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="rgba(255,255,255,0.95)">Malaysia</text>
+  
+  <text x="1186" y="786" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="21" letter-spacing="1" fill="rgba(255,255,255,0.55)">PLACEHOLDER IMAGE</text>
+</svg>

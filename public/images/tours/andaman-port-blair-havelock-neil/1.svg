@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="gox3k6y" x1="0%" y1="0%" x2="100% 100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#gox3k6y)"/>
+  <g>
+      <ellipse cx="600" cy="576" rx="504" ry="48" fill="rgba(255,255,255,0.12)"/>
+      <path d="M504 576 Q552 400 600 576 Z" fill="rgba(255,255,255,0.22)"/>
+      <path d="M552 463.99999999999994 V320 M552 320 Q456 240 408.00000000000006 192 M552 320 Q648 224.00000000000003 696 144" stroke="rgba(255,255,255,0.2)" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M0 624 Q300 592 600 624 T1200 624" stroke="rgba(255,255,255,0.16)" stroke-width="3" fill="none"/>
+    </g>
+  <text x="24" y="756" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="rgba(255,255,255,0.95)">Andaman Islands</text>
+  
+  <text x="1186" y="786" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="21" letter-spacing="1" fill="rgba(255,255,255,0.55)">PLACEHOLDER IMAGE</text>
+</svg>
