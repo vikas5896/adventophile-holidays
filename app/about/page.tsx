@@ -4,6 +4,7 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 import { buildMetadata } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { withVersion } from "@/lib/image-version";
 
 export const metadata: Metadata = buildMetadata({
   title: "About Us",
@@ -17,13 +18,13 @@ const team = [
     name: "Rahul Singh Rajpurohit",
     role: "Founder & CEO",
     bio: "Built Adventophile around a customer-first philosophy — understanding the traveller before designing the journey. What began as a personal vision has grown into a travel brand serving travellers across India, with experiences spanning both domestic and international destinations.",
-    photo: "/images/team/rahul-singh-rajpurohit.jpg",
+    photo: withVersion("/images/team/rahul-singh-rajpurohit.jpg"),
   },
   {
     name: "Rahul Pawar",
     role: "Co-Founder",
     bio: "Co-founder of Adventophile Holidays, working alongside Rahul to plan and operate journeys across India and abroad.",
-    photo: "/images/team/rahul-pawar.jpg",
+    photo: withVersion("/images/team/rahul-pawar.jpg"),
   },
 ];
 
