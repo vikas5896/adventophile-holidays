@@ -39,6 +39,8 @@
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-playfair);
+  --font-script: var(--font-dancing-script);
 }
 
 body {
@@ -60,7 +62,7 @@ body {
   }
 
   .section-title {
-    @apply mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl;
+    @apply mt-2 font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl;
   }
 
   .section-lede {

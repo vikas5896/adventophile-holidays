@@ -28,9 +28,9 @@ export default function ServicesPage() {
         </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map(({ title, description, icon: Icon }, i) => (
-            <Reveal key={title} delay={(i % 6) * 0.06}>
-              <div className="card h-full p-6">
+          {services.map(({ slug, title, description, icon: Icon }, i) => (
+            <Reveal key={slug} delay={(i % 6) * 0.06}>
+              <div id={slug} className="card h-full scroll-mt-24 p-6">
                 <div className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-50 text-brand-600">
                   <Icon className="h-5 w-5" aria-hidden="true" />
                 </div>

@@ -9,7 +9,7 @@ const exploreLinks = [
   { href: "/destinations", label: "Destinations" },
   { href: "/tours", label: "All Packages" },
   { href: "/services", label: "Our Services" },
-  { href: "/blog", label: "Blog" },
+  { href: "/blog", label: "Journal" },
   { href: "/about", label: "About Us" },
 ];
 
