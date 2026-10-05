@@ -49,12 +49,12 @@ const tourGalleries = {
     "jodhpur/deepesh-pareek-DiSHlURGr8E-unsplash.jpg",
     "jodhpur/akshay-thorat-JeMFUyi-vzo-unsplash.jpg",
   ],
-  "royal-rajasthan-jaipur-jodhpur-udaipur": [
-    "jodhpur/abhinav-tripathi-3FeeAbwIO2o-unsplash.jpg",
-    "jaisalmer/rashi-jain-L0CXfc_PE_w-unsplash.jpg",
-    "jodhpur/deepesh-pareek-DiSHlURGr8E-unsplash.jpg",
-    "jaisalmer/pj-bhumika-3GKW_PMipqs-unsplash.jpg",
-  ],
+  // royal-rajasthan-jaipur-jodhpur-udaipur is intentionally NOT listed here — its gallery
+  // (public/images/tours/royal-rajasthan-jaipur-jodhpur-udaipur/{1..4}.jpg) was assembled by
+  // hand: 1.jpg is a Hawa Mahal, Jaipur photo added one-off (no repo-root source file to
+  // re-run from), 2-4.jpg are copied from the already-resized jodhpur/jaisalmer tour photos
+  // below. Re-adding it here and re-running this script would overwrite 1.jpg with whatever
+  // photo comes first and make this tour's card thumbnail match another tour's again.
   "andaman-port-blair-havelock-neil": [
     "Andaman & nicobar/images.jpeg",
     "Andaman & nicobar/images (1).jpeg",
