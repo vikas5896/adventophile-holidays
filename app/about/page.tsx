@@ -57,7 +57,7 @@ export default function AboutPage() {
           Travel is more than simply reaching a destination. It is the anticipation before departure, the
           experiences along the way, the people you meet, and the memories you carry home. Founded in
           Jodhpur, Rajasthan, Adventophile was built on a simple belief: travel should feel personal, not
-          packaged. From family holidays and romantic honeymoons to international escapes, corporate
+          packaged. From family holidays to international escapes, corporate
           travel and tailor-made journeys, we create thoughtfully planned experiences designed around each
           traveller&rsquo;s unique preferences, expectations and style.
         </p>

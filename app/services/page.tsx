@@ -8,7 +8,7 @@ import { Reveal } from "@/components/shared/Reveal";
 export const metadata: Metadata = buildMetadata({
   title: "Our Services",
   description:
-    "Customized tour packages, domestic and international holidays, hotel bookings, private vehicles, sightseeing, honeymoon and group tours, corporate & MICE travel and complete travel assistance from Adventophile Holidays, Jodhpur.",
+    "Customized tour packages, domestic and international holidays, hotel bookings, private vehicles, sightseeing, family and group tours, corporate & MICE travel and complete travel assistance from Adventophile Holidays, Jodhpur.",
   path: "/services",
 });
 

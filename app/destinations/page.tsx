@@ -9,7 +9,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Domestic & International Destinations",
   description:
-    "Where Adventophile Holidays travels — eleven Indian destinations from Rajasthan and Kashmir to Kerala and the Andamans, plus international holidays in Dubai, the Maldives, Vietnam, Malaysia, Sri Lanka and Europe.",
+    "Where Adventophile Holidays travels — eleven Indian destinations from Rajasthan and Kashmir to Kerala and the Andamans, plus international holidays from Dubai and the Maldives to Japan, Australia, Europe, the US and beyond.",
   path: "/destinations",
 });
 

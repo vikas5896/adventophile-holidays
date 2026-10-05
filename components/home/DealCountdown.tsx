@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 // Fixed target so the countdown is deterministic between server and client renders.
-const DEAL_END = new Date("2026-12-31T23:59:59Z").getTime();
+const DEAL_END = new Date("2026-10-12T23:59:59Z").getTime();
 
 function getRemaining() {
   const diff = Math.max(0, DEAL_END - Date.now());

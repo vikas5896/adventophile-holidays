@@ -170,7 +170,7 @@ export const tours: Tour[] = [
     duration: { days: 6, nights: 5 },
     groupSize: { min: 2, max: 16 },
     minAge: 4,
-    tags: ["Hill Station", "Honeymoon", "Family"],
+    tags: ["Hill Station", "Family"],
     rating: { value: 4.9, count: 267 },
     excerpt:
       "A houseboat night on the Dal, the Gulmarg gondola, and the meadows and pine valleys above Pahalgam.",
@@ -302,12 +302,12 @@ export const tours: Tour[] = [
     duration: { days: 5, nights: 4 },
     groupSize: { min: 2, max: 20 },
     minAge: 0,
-    tags: ["Beach", "Honeymoon", "Short Break"],
+    tags: ["Beach", "Short Break"],
     rating: { value: 4.6, count: 301 },
     excerpt:
       "Four nights on the north Goa coast, with the old Portuguese quarter, a sunset river cruise and a day trip to Dudhsagar Falls.",
     overview:
-      "Goa works as a first holiday, a honeymoon and a family break all at once, which is why it is the package we sell most of. This one bases you in the north — Baga and Calangute for the shacks, markets and water sports — and adds the things people regret missing: the churches and Latin Quarter of Old Goa and Panjim, a Mandovi river cruise at sunset, and a full day out at Dudhsagar Falls. Ask us to shift the base south to Palolem or Colva if you would rather have quiet sand.",
+      "Goa works well as a first holiday or a family break, which is why it is the package we sell most of. This one bases you in the north — Baga and Calangute for the shacks, markets and water sports — and adds the things people regret missing: the churches and Latin Quarter of Old Goa and Panjim, a Mandovi river cruise at sunset, and a full day out at Dudhsagar Falls. Ask us to shift the base south to Palolem or Colva if you would rather have quiet sand.",
     highlights: [
       "Baga, Calangute and Anjuna beaches",
       "Water sports package — jet ski, banana boat and parasailing",
@@ -464,7 +464,7 @@ export const tours: Tour[] = [
     duration: { days: 6, nights: 5 },
     groupSize: { min: 2, max: 16 },
     minAge: 4,
-    tags: ["Beach", "Island", "Honeymoon"],
+    tags: ["Beach", "Island"],
     rating: { value: 4.8, count: 176 },
     excerpt:
       "Radhanagar Beach, coral at Elephant Beach, and the natural rock bridge at Neil — an island week with no visa required.",
@@ -504,12 +504,12 @@ export const tours: Tour[] = [
     duration: { days: 7, nights: 6 },
     groupSize: { min: 2, max: 16 },
     minAge: 0,
-    tags: ["Honeymoon", "Nature", "Beach"],
+    tags: ["Nature", "Beach"],
     rating: { value: 4.9, count: 248 },
     excerpt:
       "Tea hills, a night on a private houseboat through the backwaters, and beach time at Kovalam to finish.",
     overview:
-      "Kerala is the most relaxed week in India, and the one we recommend most often for honeymoons. You start in the tea estates at Munnar, cross to Thekkady for the Periyar sanctuary, then spend a night on a private houseboat drifting through the Alleppey backwaters — rice fields on both banks, meals cooked on board. The last two nights are on the coast at Kovalam. Everything is by private vehicle, with the same driver throughout.",
+      "Kerala is the most relaxed week in India. You start in the tea estates at Munnar, cross to Thekkady for the Periyar sanctuary, then spend a night on a private houseboat drifting through the Alleppey backwaters — rice fields on both banks, meals cooked on board. The last two nights are on the coast at Kovalam. Everything is by private vehicle, with the same driver throughout.",
     highlights: [
       "Tea estates, Mattupetty dam and Eravikulam park at Munnar",
       "Boat safari on Periyar lake at Thekkady",
@@ -628,12 +628,12 @@ export const tours: Tour[] = [
     duration: { days: 5, nights: 4 },
     groupSize: { min: 2, max: 8 },
     minAge: 0,
-    tags: ["Honeymoon", "Beach", "Island"],
+    tags: ["Beach", "Island"],
     rating: { value: 4.9, count: 158 },
     excerpt:
       "Four nights on a private resort island, with a house reef off your deck and a sandbank dinner in the middle.",
     overview:
-      "The Maldives is the honeymoon our clients ask for by name, and the logistics are simpler than people expect: a four-hour flight, visa on arrival, and a speedboat or seaplane from Malé straight to your resort island. This package covers four nights in a beach or overwater villa on half board, all resort transfers, a sunset dolphin cruise and a private sandbank picnic. Tell us your budget and we will match the resort to it — the range between islands here is enormous.",
+      "The Maldives is the overwater-villa escape our clients ask for by name, and the logistics are simpler than people expect: a four-hour flight, visa on arrival, and a speedboat or seaplane from Malé straight to your resort island. This package covers four nights in a beach or overwater villa on half board, all resort transfers, a sunset dolphin cruise and a private sandbank picnic. Tell us your budget and we will match the resort to it — the range between islands here is enormous.",
     highlights: [
       "Beach or overwater villa on a private resort island",
       "Snorkelling on the house reef straight from your deck",

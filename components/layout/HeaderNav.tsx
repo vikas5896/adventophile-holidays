@@ -14,7 +14,6 @@ interface DestinationLink {
 }
 
 const holidayLinks = [
-  { href: "/tours?tag=Honeymoon", label: "Honeymoon Packages" },
   { href: "/tours?tag=Family", label: "Family & Couple Holidays" },
   { href: "/tours?tag=Group", label: "Group Tours" },
   { href: "/contact", label: "Custom Itineraries" },

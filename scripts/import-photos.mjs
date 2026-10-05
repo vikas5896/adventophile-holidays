@@ -35,6 +35,21 @@ const destinationCovers = {
   rajasthan: "jodhpur/abhinav-tripathi-3FeeAbwIO2o-unsplash.jpg",
   "andaman-nicobar": "Andaman & nicobar/images.jpeg",
   "arunachal-pradesh": "Andra pradesh/images (3).jpeg",
+
+  // New international destinations — source folders are kept in place (not deleted after
+  // import) since each has 1-2 unused photos left over for future tour galleries.
+  australia: "Australia/Sydney Opera House Insights.jpg",
+  bali: "Bali/Screenshot 2026-10-05 182330.png",
+  japan: "Japan/Screenshot 2026-10-05 183301.png",
+  mauritius: "Mauritus/Port Louis, Mauritius.jpg",
+  nepal: "Nepal/Screenshot 2026-10-05 182832.png",
+  "new-zealand": "New Zeland/Screenshot 2026-10-05 183055.png",
+  singapore: "Singapore/Singapore Gardens by the Bay Travel Inspiration.jpg",
+  "south-africa": "South Africa/Best Time to Visit South Africa.jpg",
+  thailand: "Thailand/Our Favorite Places_ Bangkok.jpg",
+  usa: "USA/Screenshot 2026-10-05 182639.png",
+  kenya: "keny/The Maasai Jump.jpg",
+  tomorrowland: "tomorrowland/Tomorrowland 2010.jpg",
 };
 
 // tour slug -> ordered list of explicit source files (repo-root relative).
@@ -123,18 +138,31 @@ async function run() {
   }
 
   // Explicit per-destination covers and per-tour galleries (destinations whose photos arrived
-  // split across per-city folders, e.g. Rajasthan, rather than one folder per state).
+  // split across per-city folders, e.g. Rajasthan, rather than one folder per state). Source
+  // files for older entries get deleted once fully consumed (see each script's own history),
+  // so a missing file here is expected, not an error — skip it and keep going.
+  const skippedCovers = [];
   for (const [slug, src] of Object.entries(destinationCovers)) {
-    await writePhoto(path.join(rootDir, src), path.join(imagesRoot, "destinations", `${slug}.jpg`), { w: 1200, h: 800 });
+    const srcPath = path.join(rootDir, src);
+    if (!existsSync(srcPath)) {
+      skippedCovers.push(slug);
+      continue;
+    }
+    await writePhoto(srcPath, path.join(imagesRoot, "destinations", `${slug}.jpg`), { w: 1200, h: 800 });
     destinationCount++;
     console.log(`${slug.padEnd(18)} <- ${src}`);
   }
   for (const [tourSlug, sources] of Object.entries(tourGalleries)) {
-    for (let i = 0; i < sources.length; i++) {
-      await writePhoto(path.join(rootDir, sources[i]), path.join(imagesRoot, "tours", tourSlug, `${i + 1}.jpg`), { w: 1200, h: 800 });
+    const existing = sources.filter((s) => existsSync(path.join(rootDir, s)));
+    if (existing.length === 0) {
+      skippedCovers.push(tourSlug);
+      continue;
+    }
+    for (let i = 0; i < existing.length; i++) {
+      await writePhoto(path.join(rootDir, existing[i]), path.join(imagesRoot, "tours", tourSlug, `${i + 1}.jpg`), { w: 1200, h: 800 });
       tourImageCount++;
     }
-    console.log(`${tourSlug.padEnd(40)} <- ${sources.length} photos`);
+    console.log(`${tourSlug.padEnd(40)} <- ${existing.length} photos`);
   }
 
   // Homepage hero + default OG image, from the single hero collage.
@@ -150,6 +178,9 @@ async function run() {
   );
   if (skippedDestinations.length) {
     console.log(`No photos supplied for: ${skippedDestinations.join(", ")} — left on the illustrated SVG placeholder.`);
+  }
+  if (skippedCovers.length) {
+    console.log(`Source already consumed/deleted, skipped: ${skippedCovers.join(", ")}`);
   }
 }
 

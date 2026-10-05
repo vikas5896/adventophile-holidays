@@ -15,12 +15,6 @@ const offers = [
     href: "/contact",
     cta: "Plan a group trip",
   },
-  {
-    title: "Honeymoon Add-Ons",
-    description: "Room upgrades, a private dinner and airport assistance included on Kerala and Maldives bookings.",
-    href: "/tours?tag=Honeymoon",
-    cta: "See honeymoon packages",
-  },
 ];
 
 export function SpecialOffers() {
@@ -31,7 +25,7 @@ export function SpecialOffers() {
           <p className="section-eyebrow">Special offers</p>
           <h2 className="section-title">Ways to save on your next holiday</h2>
         </Reveal>
-        <div className="mt-10 grid gap-6 sm:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2">
           {offers.map((offer, i) => (
             <Reveal key={offer.title} delay={i * 0.1}>
               <div className="card flex h-full flex-col p-6">

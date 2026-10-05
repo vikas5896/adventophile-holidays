@@ -4,7 +4,6 @@ import {
   Bus,
   Camera,
   Globe2,
-  Heart,
   Headphones,
   Map,
   Users,
@@ -68,13 +67,6 @@ export const services: Service[] = [
     description:
       "Departures for extended families, friend circles, schools and pilgrimage groups of any size.",
     icon: UsersRound,
-  },
-  {
-    slug: "honeymoon-packages",
-    title: "Honeymoon Packages",
-    description:
-      "Kerala, the Maldives, Kashmir and Europe — with room upgrades, private dinners and quiet corners arranged.",
-    icon: Heart,
   },
   {
     slug: "corporate-mice-travel",

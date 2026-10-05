@@ -1,12 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Compass, Crosshair, Heart, Map, PlaneTakeoff, Users, UsersRound } from "lucide-react";
+import { Compass, Crosshair, Map, PlaneTakeoff, Users, UsersRound } from "lucide-react";
 import clsx from "clsx";
 import { Reveal } from "@/components/shared/Reveal";
 
 const featureStrip = [
   { icon: Crosshair, label: "Domestic & International" },
-  { icon: Heart, label: "Honeymoons" },
   { icon: Users, label: "Family Holidays" },
   { icon: UsersRound, label: "Group Travel" },
   { icon: Map, label: "Custom Itineraries" },
