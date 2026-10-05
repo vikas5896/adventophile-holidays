@@ -1,13 +1,14 @@
 import type { Tour } from "@/lib/types";
 import type { DestinationScope } from "@/lib/types";
 import { getDestinationBySlug } from "@/lib/data/destinations";
+import { withVersion } from "@/lib/image-version";
 
 // Tours with real photography imported via scripts/import-photos.mjs (see the matching
 // destination-photo count there) — everything else falls back to the illustrated SVG
 // placeholder from scripts/generate-placeholders.mjs.
 const PHOTO_GALLERY_COUNTS: Record<string, number> = {
   "jodhpur-osian-desert-safari": 3,
-  "royal-rajasthan-jaipur-jodhpur-udaipur": 3,
+  "royal-rajasthan-jaipur-jodhpur-udaipur": 4,
   "jaisalmer-golden-city-desert-camp": 3,
   "kashmir-srinagar-gulmarg-pahalgam": 4,
   "himachal-shimla-manali-solang": 4,
@@ -23,13 +24,15 @@ const PHOTO_GALLERY_COUNTS: Record<string, number> = {
   "malaysia-kl-genting-langkawi": 4,
   "sri-lanka-colombo-kandy-bentota": 4,
   "europe-paris-switzerland-rome": 4,
+  "andaman-port-blair-havelock-neil": 2,
+  "arunachal-tawang-bomdila": 3,
 };
 
 function gallery(slug: string, label: string) {
   const photoCount = PHOTO_GALLERY_COUNTS[slug];
   if (photoCount) {
     return Array.from({ length: photoCount }, (_, i) => ({
-      src: `/images/tours/${slug}/${i + 1}.jpg`,
+      src: withVersion(`/images/tours/${slug}/${i + 1}.jpg`),
       alt: i === 0 ? label : `${label} — photo ${i + 1}`,
     }));
   }

@@ -7,16 +7,16 @@
   --muted-foreground: #475569;
   --border: #e2e8f0;
 
-  --brand-50: #ecfeff;
-  --brand-100: #cffafe;
-  --brand-400: #22d3ee;
-  --brand-500: #0891b2;
-  --brand-600: #0e7490;
-  --brand-700: #155e75;
-  --brand-900: #164e63;
+  --brand-50: #ecf6f0;
+  --brand-100: #cfe8d9;
+  --brand-400: #3f8f66;
+  --brand-500: #1f6e45;
+  --brand-600: #145c38;
+  --brand-700: #0d4428;
+  --brand-900: #062a18;
 
-  --accent-500: #ea580c;
-  --accent-600: #c2410c;
+  --accent-500: #c89628;
+  --accent-600: #a67c1e;
 }
 
 @theme inline {

@@ -1,4 +1,5 @@
 import type { Destination, DestinationScope } from "@/lib/types";
+import { withVersion } from "@/lib/image-version";
 
 // Destinations with real photography imported via scripts/import-photos.mjs — everything else
 // still falls back to the illustrated SVG placeholder from scripts/generate-placeholders.mjs.
@@ -18,12 +19,15 @@ const PHOTOGRAPHED_DESTINATIONS = new Set([
   "malaysia",
   "sri-lanka",
   "europe",
+  "andaman-nicobar",
+  "arunachal-pradesh",
 ]);
 
 function cover(slug: string, label: string) {
   const hasPhoto = PHOTOGRAPHED_DESTINATIONS.has(slug);
+  const src = `/images/destinations/${slug}.${hasPhoto ? "jpg" : "svg"}`;
   return {
-    src: `/images/destinations/${slug}.${hasPhoto ? "jpg" : "svg"}`,
+    src: hasPhoto ? withVersion(src) : src,
     alt: hasPhoto ? `${label}` : `${label} — placeholder destination photo`,
   };
 }

@@ -7,6 +7,11 @@ const nextConfig: NextConfig = {
     dangerouslyAllowSVG: true,
     contentDispositionType: "inline",
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    // Local photos carry a `?v=<mtime>` cache-busting query (see lib/image-version.ts) so
+    // re-imported photos at the same path aren't served stale from browser/optimizer cache.
+    // `search` is omitted (vs. pinned to one value) because the version changes per file, per
+    // import run — safe here since `/images/**` is our own self-hosted, non-user-controlled path.
+    localPatterns: [{ pathname: "/images/**" }],
   },
 };
 

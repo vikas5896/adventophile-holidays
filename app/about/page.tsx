@@ -8,42 +8,40 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 export const metadata: Metadata = buildMetadata({
   title: "About Us",
   description:
-    "Adventophile Holidays is a travel & holiday management company based in Shastri Nagar, Jodhpur — customized domestic and international packages, planned and operated by one team.",
+    "Adventophile Holidays is a founder-led travel & holiday management company based in Shastri Nagar, Jodhpur — customized domestic and international packages, planned and operated by one team.",
   path: "/about",
 });
 
-// PLACEHOLDER — illustrative team entries written to show the layout, not real staff.
-// Replace the names, roles, bios and photos with the real team before launch.
 const team = [
   {
-    name: "Vikram Rathore",
-    role: "Founder & Tour Operations",
-    bio: "Grew up in Jodhpur and has been running desert and fort itineraries across Rajasthan for over a decade. Handles the domestic programme and the driver and guide network.",
-    photo: "/images/team/vikram.svg",
+    name: "Rahul Singh Rajpurohit",
+    role: "Founder & CEO",
+    bio: "Built Adventophile around a customer-first philosophy — understanding the traveller before designing the journey. What began as a personal vision has grown into a travel brand serving travellers across India, with experiences spanning both domestic and international destinations.",
+    photo: "/images/team/rahul-singh-rajpurohit.jpg",
   },
   {
-    name: "Meera Suthar",
-    role: "International Holidays & Documentation",
-    bio: "Looks after the overseas programme — Dubai, the Maldives, Southeast Asia and Europe — along with visa documentation, insurance and airline bookings.",
-    photo: "/images/team/meera.svg",
+    name: "Rahul Pawar",
+    role: "Co-Founder",
+    bio: "Co-founder of Adventophile Holidays, working alongside Rahul to plan and operate journeys across India and abroad.",
+    photo: "/images/team/rahul-pawar.jpg",
   },
 ];
 
 const values = [
   {
-    title: "Customized, not off the shelf",
+    title: "Personalised planning",
     description:
-      "Every package on this site is a starting point. We change the hotels, the pace and the route to fit your dates and your budget.",
+      "Every traveller is different, so every itinerary starts with understanding you — your preferences, expectations and style — before we design the journey.",
   },
   {
-    title: "One team, start to finish",
+    title: "Honest, detail-first recommendations",
     description:
-      "The person who quotes your trip is the person who books it and the person you call if a flight moves. Nothing is handed to a subcontracted call centre.",
+      "No upselling, no guesswork. Just honest recommendations and attention to the details that make a trip go smoothly.",
   },
   {
-    title: "Local where it matters",
+    title: "Support before, during and after",
     description:
-      "In Rajasthan we use our own vehicles, drivers and guides. Everywhere else we work with operators we have travelled with ourselves.",
+      "Our relationship does not end when the booking is confirmed. We are there before, during and around your journey — not just the parts we arranged.",
   },
 ];
 
@@ -53,14 +51,33 @@ export default function AboutPage() {
       <Breadcrumbs items={[{ label: "About", href: "/about" }]} />
       <div className="container-page section">
         <p className="section-eyebrow">About Adventophile Holidays</p>
-        <h1 className="section-title">A travel &amp; holiday management company from Jodhpur</h1>
+        <h1 className="section-title">Travel Beyond Ordinary.</h1>
         <p className="section-lede">
-          Adventophile Holidays plans and operates customized holidays for families, couples, friend
-          groups and companies — eleven destinations across India and six international ones. We are
-          based in Shastri Nagar, Jodhpur, and we handle the whole trip: the itinerary, the hotels, the
-          vehicles, the sightseeing, the permits and paperwork, and the phone call when something changes
-          while you are travelling.
+          Travel is more than simply reaching a destination. It is the anticipation before departure, the
+          experiences along the way, the people you meet, and the memories you carry home. Founded in
+          Jodhpur, Rajasthan, Adventophile was built on a simple belief: travel should feel personal, not
+          packaged. From family holidays and romantic honeymoons to international escapes, corporate
+          travel and tailor-made journeys, we create thoughtfully planned experiences designed around each
+          traveller&rsquo;s unique preferences, expectations and style.
         </p>
+
+        <div className="mt-14 card p-6 sm:p-8">
+          <h2 className="text-2xl font-bold text-foreground">Our Story</h2>
+          <p className="mt-3 text-sm text-muted-foreground">
+            Adventophile began with a young entrepreneur&rsquo;s passion for travel and a vision to create
+            something better than conventional, one-size-fits-all travel packages. Rahul Singh Rajpurohit,
+            Founder &amp; CEO, built Adventophile around a customer-first philosophy — understanding the
+            traveller before designing the journey.
+          </p>
+          <p className="mt-3 text-sm text-muted-foreground">
+            What began as a personal vision has grown into a travel brand serving travellers across India,
+            with experiences spanning both domestic and international destinations. Today, our approach
+            remains simple:
+          </p>
+          <p className="mt-4 border-l-2 border-brand-600 pl-4 text-base font-semibold text-foreground">
+            Earn the traveller&rsquo;s trust first. The booking comes second.
+          </p>
+        </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-3">
           {values.map((value) => (
@@ -69,6 +86,20 @@ export default function AboutPage() {
               <p className="mt-2 text-sm text-muted-foreground">{value.description}</p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-16 card bg-brand-900 p-6 text-white sm:p-8">
+          <h2 className="text-2xl font-bold">Our Promise</h2>
+          <p className="mt-3 text-sm text-brand-50">
+            Your destination is our responsibility, and your experience is our priority. We want every
+            traveller to feel heard before they book, confident while they travel, supported when they
+            need us, and happy when they return.
+          </p>
+          <p className="mt-3 text-sm text-brand-50">
+            For us, success is not simply another booking. It is when a traveller returns with
+            unforgettable stories, chooses Adventophile for their next journey, and confidently recommends
+            us to someone they care about.
+          </p>
         </div>
 
         <div className="mt-16">
@@ -125,6 +156,9 @@ export default function AboutPage() {
           <p className="max-w-lg text-sm text-muted-foreground">
             The destinations on this site are the ones we run most often, not a limit. Tell us where you
             want to go and we will build the itinerary around it.
+          </p>
+          <p className="text-sm font-semibold text-brand-700">
+            Your next adventure starts with a conversation.
           </p>
           <Link href="/contact" className="btn-primary">
             Get in touch
